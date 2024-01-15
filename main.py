@@ -2,10 +2,10 @@
 import requests
 from twilio.rest import Client
 
-api_key = "a30665999b7a65562ce8ccc9f848dc0f"  # openweathermap.org
+api_key = "a30665999b7a65562ce8ccc90f"  # openweathermap.org will not work use your own
 
-acc_sid = "AC223bbdecca78fb4a967279215faaf474"  # console.twilio.com
-auth_token = "9f61f80d391a98adda47f134151e12c3"  # console.twilio.com
+acc_sid = "AC22cca78fb4a9672792faaf474"  # console.twilio.com will not work use your own
+auth_token = "9f61f801a98a7f4151e12c3"  # console.twilio.com will not work use your own
 
 
 my_lat = 19.154689  # latlong.com
@@ -39,7 +39,7 @@ if will_rain:
     message = client.messages \
         .create(
         body="It's going to rain today. remember to bring an umbrella ☔",
-        from_="+18484208985",
+        from_="+1848420985",
         to="+917385348373"
     )
 
